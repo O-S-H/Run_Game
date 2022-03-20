@@ -7,6 +7,7 @@ TagManager:
   - Item
   - Enemy
   - Platform
+  - Enermy
   layers:
   - Default
   - TransparentFX
@@ -14,9 +15,9 @@ TagManager:
   - Paltform
   - Water
   - UI
-  - Enemy
-  - 
-  - 
+  - Enermy
+  - Player
+  - Player Demged
   - 
   - 
   - 

@@ -75,9 +75,10 @@ public class PlayerController : MonoBehaviour
         {
             Debug.DrawRay(rigid.position, Vector3.down, new Color(0, 1, 0));
             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Paltform"));
+          
             if (rayHit.collider != null)
             {
-                if (rayHit.distance < 1)
+                if (rayHit.distance > 0.5f)
                 {
                     anim.SetBool("isJump", false);
                 }
@@ -85,5 +86,35 @@ public class PlayerController : MonoBehaviour
             }
         }
         
+    }
+     void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enermy")
+        {
+            onDamaged(collision.transform.position);
+        }
+        
+    }
+    void onDamaged(Vector2 targetpos)
+    {
+        gameObject.layer = 8;
+        spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+        int dirc = transform.position.x - targetpos.x > 0 ? 1 : -1;
+        rigid.AddForce(new Vector2(dirc, 1)*7, ForceMode2D.Impulse);
+        
+        //Animation
+        anim.SetTrigger("isDamged");
+        
+        
+        //
+        Invoke("offDamaged", 1f);
+
+        
+    }
+
+    void offDamaged()
+    {
+        gameObject.layer = 7;
+        spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 } 
