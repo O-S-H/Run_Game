@@ -219,7 +219,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88128180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.49, y: 0.3, z: 0}
+  m_LocalPosition: {x: 2.17, y: 0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 568280409}
   - component: {fileID: 568280408}
   - component: {fileID: 568280407}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 568280406}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b3d7fb82fc3928b4e86a38fcc585577a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -468,7 +468,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568280406}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4, y: -1.5, z: 0}
+  m_LocalPosition: {x: 1.0800002, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 701569444}
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 701569444}
   - component: {fileID: 701569443}
   - component: {fileID: 701569442}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (4)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 701569441}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b3d7fb82fc3928b4e86a38fcc585577a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 785327302}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -687,7 +687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785327298}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.28, y: 0.54, z: 0}
+  m_LocalPosition: {x: 5.96, y: 0.53999996, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -836,7 +836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204503257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.39, y: -0.23, z: 0}
+  m_LocalPosition: {x: 3.07, y: -0.18999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -938,7 +938,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351289124}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.39, y: -0.54032445, z: 0}
+  m_LocalPosition: {x: 5.0699997, y: -0.50032437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -955,7 +955,7 @@ GameObject:
   - component: {fileID: 1480744187}
   - component: {fileID: 1480744186}
   - component: {fileID: 1480744185}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (3)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -971,7 +971,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1480744184}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b3d7fb82fc3928b4e86a38fcc585577a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1064,7 +1064,7 @@ GameObject:
   - component: {fileID: 1563816507}
   - component: {fileID: 1563816506}
   - component: {fileID: 1563816505}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Single Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1080,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1563816504}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b3d7fb82fc3928b4e86a38fcc585577a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1173,7 +1173,7 @@ GameObject:
   - component: {fileID: 1592243229}
   - component: {fileID: 1592243228}
   - component: {fileID: 1592243227}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (2)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -1189,7 +1189,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1592243226}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b3d7fb82fc3928b4e86a38fcc585577a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1367,7 +1367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799643313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.7, y: -0.27, z: 0}
+  m_LocalPosition: {x: 1.3800001, y: -0.2299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1453,7 +1453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962715467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5763919, y: 1.44, z: 0}
+  m_LocalPosition: {x: 0, y: 2.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1491,9 +1491,9 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1537,7 +1537,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a7b0d9544437f4ea952a00df1cf7af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 4.5
+  maxSpeed: 3.5
+  jumpPower: 10
 --- !u!1 &1984086698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1549,7 +1550,7 @@ GameObject:
   - component: {fileID: 1984086701}
   - component: {fileID: 1984086700}
   - component: {fileID: 1984086699}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform (1)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -1658,7 +1659,7 @@ GameObject:
   - component: {fileID: 2119905589}
   - component: {fileID: 2119905588}
   - component: {fileID: 2119905587}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Single Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1674,7 +1675,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2119905586}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: b3d7fb82fc3928b4e86a38fcc585577a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
