@@ -913,11 +913,7 @@ GameObject:
   - component: {fileID: 1432981336}
   m_Layer: 3
   m_Name: Tilemap
-<<<<<<< HEAD
-  m_TagString: Platform
-=======
   m_TagString: Untagged
->>>>>>> d87ce353a3af055463bc553f75ea53c0122740a9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1591,11 +1587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9a7b0d9544437f4ea952a00df1cf7af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  maxSpeed: 3.5
-=======
   maxSpeed: 4.5
->>>>>>> d87ce353a3af055463bc553f75ea53c0122740a9
   jumpPower: 15
 --- !u!1 &1998161174
 GameObject:
