@@ -3,21 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Item
-  - Enemy
-  - Platform
-  - Enermy
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Paltform
+  - 
   - Water
   - UI
-  - Enermy
-  - Player
-  - PlayerDamged
+  - 
+  - 
+  - 
   - 
   - 
   - 
