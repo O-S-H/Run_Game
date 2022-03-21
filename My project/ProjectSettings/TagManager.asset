@@ -7,16 +7,17 @@ TagManager:
   - Item
   - Enemy
   - Platform
+  - Enermy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Paltform
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Enermy
+  - Player
+  - PlayerDamged
   - 
   - 
   - 
