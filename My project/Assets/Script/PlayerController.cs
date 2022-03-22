@@ -1,13 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public Gamemanager gamemanager;
     public float maxSpeed;
     public float jumpPower;
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
+    private bool stepped = false;
+    public GameObject gameoverUI;
+
+
+
+
 
     Animator anim;
 
@@ -17,22 +25,25 @@ public class PlayerController : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+       
     }
+  
     void Update() //1초에 60프레임
     {
+        
         if (Input.GetButtonUp("Horizontal"))
         {
             rigid.velocity = new Vector2(rigid.velocity.normalized.x * 0.5f, rigid.velocity.y);
         }
 
         //캐릭터 방향 전환
-        if (Input.GetButtonDown("Horizontal"))
+        if (Input.GetButton("Horizontal"))
         {
             spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == -1;
 
 
         }
-        if (Mathf.Abs(rigid.velocity.x) < 0.5)
+        if (Mathf.Abs(rigid.velocity.x) < 0.5f)
         {
             anim.SetBool("isWalk", false);
 
@@ -49,6 +60,7 @@ public class PlayerController : MonoBehaviour
 
 
         }
+        
 
 
 
@@ -78,7 +90,7 @@ public class PlayerController : MonoBehaviour
           
             if (rayHit.collider != null)
             {
-                if (rayHit.distance < 0.5f)
+                if (rayHit.distance < 3)
                 {
                     anim.SetBool("isJump", false);
                 }
@@ -91,10 +103,37 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enermy")
         {
-            onDamaged(collision.transform.position);
+            if (rigid.position.y < 0 && transform.position.y > collision.transform.position.y)
+            {
+                OnAttack(collision.transform);
+            }
+            else
+            {
+                onDamaged(collision.transform.position);
+            }
+            if (collision.gameObject.tag == "Player" )
+            {
+                stepped = true;
+                Gamemanager.instance.AddScore(1);
+            }
+
         }
+
+        
+        void  OnAttack(Transform  other)
+
+        {
+
+            rigid.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
+            Enermy enermy = other.GetComponent<Enermy>();
+            enermy.onDamaged();
+
+
+        }
+
         
     }
+    
     void onDamaged(Vector2 targetpos)
     {
         gameObject.layer = 8;
@@ -117,4 +156,39 @@ public class PlayerController : MonoBehaviour
         gameObject.layer = 7;
         spriteRenderer.color = new Color(1, 1, 1, 1);
     }
+    private void Die()
+    {
+        rigid.velocity = Vector2.zero;
+       
+        Gamemanager.instance.OnplayerDead();
+    }
+    
+    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        
+        if (collision.gameObject.tag == "coin")
+        {
+
+            
+            collision.gameObject.SetActive(false);
+            
+           
+        }
+        if (collision.gameObject.tag == "Dead")
+        {
+
+            gameoverUI.SetActive(true);
+
+        }
+
+        
+
+
+
+    }
+    
+
+
 } 
