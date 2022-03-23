@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Platform
   - Enermy
+  - Dead
+  - coin
   layers:
   - Default
   - TransparentFX
