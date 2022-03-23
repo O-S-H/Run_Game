@@ -523,7 +523,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
+<<<<<<< HEAD
   m_Text: 'Press the Enter   : next stage.'
+=======
+  m_Text: Press the Enter to move to the next stage.
+>>>>>>> ffe8602091a142e54db6e83c70c53a6afd60da66
 --- !u!222 &668349199
 CanvasRenderer:
   m_ObjectHideFlags: 0
